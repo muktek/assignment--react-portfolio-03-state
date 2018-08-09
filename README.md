@@ -52,9 +52,12 @@ npm start
     - They are included in the setups
 
 
+## Part I
 
 ### ShowHideTech Demo
 ![showhide](demo/showhide-demo.gif)
+
+## Part II
 
 ### FilterProjects Demo
 ![filterprojects](demo/filterprojects-demo.gif)
