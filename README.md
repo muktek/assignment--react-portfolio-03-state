@@ -52,9 +52,10 @@ npm start
     - They are included in the setups
 
 
-
-### ShowHideTech Demo
+### Expected Result - Part 1
+`ShowHideTech` component
 ![showhide](demo/showhide-demo.gif)
 
-### FilterProjects Demo
+### Expected Result - Part 2
+`FilterProjects` component
 ![filterprojects](demo/filterprojects-demo.gif)
