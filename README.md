@@ -53,9 +53,9 @@ npm start
 
 
 ### Expected Result - Part 1
-`ShowHideTech` component
+#### `ShowHideTech` component
 ![showhide](demo/showhide-demo.gif)
 
 ### Expected Result - Part 2
-`FilterProjects` component
+#### `FilterProjects` component
 ![filterprojects](demo/filterprojects-demo.gif)
