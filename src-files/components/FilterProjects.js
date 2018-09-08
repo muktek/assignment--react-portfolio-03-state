@@ -3,44 +3,55 @@ import { projectData } from '../data/datasource'
 
 /*  Advice:
    (1) Create the component's JSX by using .map() on `projectData`
-
-       <div className="project project--«...PROJECT-TYPE...»">
-         <span className="project__title">«...PROJECT-NAME...»</span>
-       </div>
-
-       -- substitute values for PROJECT-TYPE and PROJECT-NAME
+       you will want to map to an array of <Project/> components
 
 
    (2) add an onClick event listener to the  <span> elements in .project-types-list
-        that calls a method to change the FilterProjects component state
+        that calls a method to change the FilterProjects component state to the selected
+        view,
 
-        Hint: you will want to set the component's initial state in the
+        Note: you will want to set the component's initial state in the
               constructor() function
 
-   (3) Use .filter() in the render() method `projectData` based on FilterProjects
+   (3) Use .filter() to render the `projectData` based on FilterProjects
        component state
 
-       Hint: you may want to use .filter() then .map()
+       Hint: you may want to use .filter() depending on the  then .map()
+
+
  */
 
 class FilterProjects extends Component {
 
   render() {
+    const projectSelectedClassVal = 'project-type--selected'
+
+    let allSelectedClassName = projectSelectedClassVal
+    let soloSelectedClassName = ''
+    let teamSelectedClassName = ''
+
+    // change value of 'let' variables based on component state for whether
+    //'all', 'team', or 'solo' is selected
+
+
+
+
+    // --
 
     return (
       <section>
           <h4>Projects</h4>
 
           <div className="project-types-list">
-            <span data-ptype="all" className="project-type project-type--all project-type--selected">
+            <span data-ptype="all" className={`project-type project-type--all ${allSelectedClassName}`}>
               All
             </span>
 
-            <span data-ptype="solo" className="project-type project-type--solo ">
+            <span data-ptype="solo" className={`project-type project-type--solo ${soloSelectedClassName}}`}>
               <i className="ion-person"></i>Solo
             </span>
 
-            <span data-ptype="team" className="project-type project-type--team">
+            <span data-ptype="team" className={`project-type project-type--team ${teamSelectedClassName}`}>
               <i className="ion-person-stalker"></i>Team
             </span>
           </div>

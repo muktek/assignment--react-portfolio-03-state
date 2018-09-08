@@ -2,16 +2,18 @@ import React, { Component } from 'react';
 
 
 /*  Note:
-   if you find a add/remove 'techlist--hidden' from the div element's class,
-   the techlist box will appear/disappear
- 
+   if you toggle between 'techlist--hidden' and 'techlist--visible' on the div element's
+   class value, the techlist box will appear and disappear.
 */
 
 class ShowHideTech extends Component {
 
   render() {
 
-    let techlistStatus = `techlist--hidden`
+    const techlistHiddenClassname = `techlist--hidden`
+    const techlistVisibleClassname = `techlist--visible`
+
+    let techlistStatus = techlistHiddenClassname
 
     return (
       <section>
