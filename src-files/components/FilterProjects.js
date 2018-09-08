@@ -30,13 +30,12 @@ class FilterProjects extends Component {
     let soloSelectedRenderedClass = ''
     let teamSelectedRenderedClass = ''
 
-    // change value of 'let' variables based on component state for whether
+    // NOTE:
+    // change value of '*SelecteedRenderecClass' variables based on component state for whether
     //'all', 'team', or 'solo' is selected
 
 
 
-
-    // --
 
     return (
       <section>
@@ -51,7 +50,7 @@ class FilterProjects extends Component {
               <i className="ion-person"></i>Solo
             </span>
 
-            <span data-ptype="team" className={`project-type project-type--team ${teamSelectedRenderedClass}`}>
+            <span data-ptype="team" className={`project-type project-type--team ${teamSelectedRenderedClass }`}>
               <i className="ion-person-stalker"></i>Team
             </span>
           </div>
