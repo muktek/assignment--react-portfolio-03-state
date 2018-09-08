@@ -26,9 +26,9 @@ class FilterProjects extends Component {
   render() {
     const projectSelectedClassVal = 'project-type--selected'
 
-    let allSelectedClassName = projectSelectedClassVal
-    let soloSelectedClassName = ''
-    let teamSelectedClassName = ''
+    let allSelectedRenderedClass = projectSelectedClassVal
+    let soloSelectedRenderedClass = ''
+    let teamSelectedRenderedClass = ''
 
     // change value of 'let' variables based on component state for whether
     //'all', 'team', or 'solo' is selected
@@ -43,15 +43,15 @@ class FilterProjects extends Component {
           <h4>Projects</h4>
 
           <div className="project-types-list">
-            <span data-ptype="all" className={`project-type project-type--all ${allSelectedClassName}`}>
+            <span data-ptype="all" className={`project-type project-type--all ${allSelectedRenderedClass}`}>
               All
             </span>
 
-            <span data-ptype="solo" className={`project-type project-type--solo ${soloSelectedClassName}}`}>
+            <span data-ptype="solo" className={`project-type project-type--solo ${soloSelectedRenderedClass}}`}>
               <i className="ion-person"></i>Solo
             </span>
 
-            <span data-ptype="team" className={`project-type project-type--team ${teamSelectedClassName}`}>
+            <span data-ptype="team" className={`project-type project-type--team ${teamSelectedRenderedClass}`}>
               <i className="ion-person-stalker"></i>Team
             </span>
           </div>
